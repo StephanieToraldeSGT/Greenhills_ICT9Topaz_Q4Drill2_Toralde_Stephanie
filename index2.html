@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial scale-1.0">
+    <title>Q4 Drill 2</title>
+    <style>
+        body {
+            background: url(https://raw.githubusercontent.com/StephanieToraldeSGT/Greenhills_ICT9Topaz_Q4Drill2_Toralde_Stephanie/refs/heads/main/blueandorange.jpg) center center/cover no-repeat fixed;
+        }
+
+        .my-box {
+            background-color: rgb(65, 65, 65, 0.9);
+            margin-top: 230px;
+            margin-left: 500px;
+            margin-right: 500px;
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-box">
+        <h2 style="color: orange; font-family: monospace;">Heat Index Checker</h2>
+        <h5 style="color: rgb(255, 255, 255); font-family: monospace;">Input the temperature and humidity, then click to
+            see the heat index and its status</h5>
+        <form style="margin-left: 15px; margin-right: 15px;">
+            <h4 style="color: rgb(255, 254, 255); font-family: monospace;">Temperature</h4>
+            <input type="number" id="degree_value" placeholder="Input degree value">
+            <h4 style="color: rgb(255, 254, 255); font-family: monospace;">Humidity</h4>
+            <input type="number" id="percentage_value" placeholder="Input percentage value"><br>
+            <input style="background-color: rgb(0, 174, 255); color: rgb(255, 255, 255); font-family: monospace;"
+                type="button" onclick="check_heatindex()" value="Check"><br>
+        </form>
+        <div style="color: rgb(255, 255, 255); font-family: monospace;" id="display1"></div>
+        <script src="d2.js"></script>
+    </div>
+</body>
+
+</html>
